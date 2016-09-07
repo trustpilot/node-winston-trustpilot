@@ -1,5 +1,5 @@
 {
-  "name": "@trustpilot/trustpilot-logger",
+  "name": "trustpilot-logger",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,8 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/trustpilot/node-trustpilot-logger.git"
   },
-  "dependencies": {
-    "winston": "2.2.0"
+  "peerDependencies": {
+    "winston": "2.x"
   },
   "devDependencies": {
     "babel-eslint": "6.1.2",
