@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trustpilot/node-kibana-logger.git"
+    "url": "git+https://github.com/trustpilot/node-trustpilot-logger.git"
   },
   "dependencies": {
     "winston": "2.2.0"
