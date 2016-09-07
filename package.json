@@ -9,6 +9,13 @@
   "private": true,
   "author": "",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://trustpilot.myget.org/F/npm/npm/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trustpilot/node-kibana-logger.git"
+  },
   "dependencies": {
     "winston": "2.2.0"
   },
