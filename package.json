@@ -1,0 +1,22 @@
+{
+  "name": "kibana-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "6.1.2",
+    "eslint": "2.13.1",
+    "eslint-config-trustpilot": "1.6.0",
+    "eslint-plugin-babel": "3.3.0",
+    "eslint-plugin-react": "6.1.2"
+  }
+}
