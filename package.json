@@ -8,9 +8,6 @@
   },
   "author": "Bardur Hammer Pihl",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://trustpilot.myget.org/F/npm/npm/"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trustpilot/node-trustpilot-logger.git"
