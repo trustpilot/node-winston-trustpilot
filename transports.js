@@ -1,4 +1,4 @@
 'use strict';
 
-module.exports.LogstashConsole = require('./LogstashConsole');
-module.exports.DevConsole = require('./DevConsole');
+module.exports.LogstashConsole = require('./logstashConsole');
+module.exports.DevConsole = require('./devConsole');
