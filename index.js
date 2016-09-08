@@ -1,10 +1,10 @@
 'use strict';
 
-const KibanaConsole = require('./KibanaConsole');
-const DevConsole = require('./DevConsole');
+const transports = require('./transports');
 
-module.exports.default = function (options) {
-    return [new KibanaConsole(options), new DevConsole(options)];
+module.exports.transports = transports;
+
+module.exports.transports.default = function (options) {
+    return [new transports.KibanaConsole(options), new transports.DevConsole(options)];
 };
-module.exports.KibanaConsole = KibanaConsole;
-module.exports.DevConsole = DevConsole;
+
