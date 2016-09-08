@@ -1,12 +1,12 @@
-# node-trustpilot-logger
-A Kibana friendly logger for node projects running in docker or lambda 
+# node-winston-trustpilot
+Package to keep different winston components/settings that is being used at Trustpilot
 
 An example of usage
 ```javascript
-const trustpilotLogger = require('./index');
 const Winston = require('winston');
+const tpWinston = require('winston-trustpilot');
 const logger = new Winston.Logger({
     level: 'info',
-    transports: trustpilotLogger.default()
+    transports: tpWinston.transports.default()
 });
 ```
