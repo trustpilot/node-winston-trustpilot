@@ -7,6 +7,6 @@ const Winston = require('winston');
 const tpWinston = require('winston-trustpilot');
 const logger = new Winston.Logger({
     level: 'info',
-    transports: tpWinston.transports.default()
+    transports: [tpWinston.transports.default()]
 });
 ```
