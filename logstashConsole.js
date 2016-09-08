@@ -2,13 +2,13 @@
 
 const logger = require('console');
 
-const KibanaConsole = module.exports = function (options) {
+const LogstashConsole = function (options) {
     this.logger = logger;
     this.options = options || {};
-    this.name = 'kibanaConsole';
+    this.name = 'logstashConsole';
 };
 
-KibanaConsole.prototype.log = function (level, msg, metadata, callback) {
+LogstashConsole.prototype.log = function (level, msg, metadata, callback) {
     const defaultData = {
         timestamp: new Date().toJSON(),
         message: msg,
@@ -19,3 +19,5 @@ KibanaConsole.prototype.log = function (level, msg, metadata, callback) {
     this.logger.log(JSON.stringify(data));
     callback(null, true);
 };
+
+module.exports = LogstashConsole;

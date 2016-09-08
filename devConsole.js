@@ -8,7 +8,7 @@ try {
 }
 
 module.exports = function (options) {
-    if (process.env.NODE_ENV === 'development' && winston !== null) {
+    if (winston !== null) {
         return new winston.transports.Console(
             Object.assign({
                 colorize: true,

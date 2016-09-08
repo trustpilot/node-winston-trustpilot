@@ -1,6 +1,4 @@
 'use strict';
 
-module.exports = {
-    KibanaConsole: require('./KibanaConsole'),
-    DevConsole: require('./DevConsole')
-};
+module.exports.LogstashConsole = require('./LogstashConsole');
+module.exports.DevConsole = require('./DevConsole');
