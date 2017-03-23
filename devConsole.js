@@ -2,7 +2,7 @@
 
 let winston;
 try {
-    winston = require('winston');
+    winston = require('winston'); // eslint-disable-line global-require
 } catch (error) {
     winston = null;
 }
