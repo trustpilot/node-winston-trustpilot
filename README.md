@@ -15,10 +15,10 @@ npm install winston winston-trustpilot --save
 Base implemention of the logger:
 
 ```javascript
-const Winston = require('winston');
-const tpWinston = require('winston-trustpilot');
-const logger = new Winston.Logger({
+var winston = require('winston');
+var winstonTrustpilot = require('winston-trustpilot');
+var logger = new winston.Logger({
     level: 'info',
-    transports: [tpWinston.transports.default()]
+    transports: [winstonTrustpilot.transports.default()]
 });
 ```
