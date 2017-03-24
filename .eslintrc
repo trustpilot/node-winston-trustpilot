@@ -1,6 +1,3 @@
 {
-    "extends": "trustpilot",
-    "rules": {
-        "indent": [1, 4]
-    }
+    "extends": "trustpilot"
 }

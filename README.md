@@ -2,19 +2,23 @@
 
 [![Build Status](https://travis-ci.org/trustpilot/node-winston-trustpilot.svg?branch=master)](https://travis-ci.org/trustpilot/node-winston-trustpilot) [![npm](https://img.shields.io/npm/v/winston-trustpilot.svg)](https://www.npmjs.com/package/winston-trustpilot)
 
-Package to keep different Winston components/settings that are being used at Trustpilot.
+Kibana friendly logger for Trustpilot projects.
+
+## Installation
 
 ```javascript
-npm install --save winston winston-trustpilot
+npm install winston winston-trustpilot --save
 ```
 
-An example of usage
+## Getting Started
+
+Base implemention of the logger:
 
 ```javascript
-const Winston = require('winston');
-const tpWinston = require('winston-trustpilot');
-const logger = new Winston.Logger({
+var winston = require('winston');
+var winstonTrustpilot = require('winston-trustpilot');
+var logger = new winston.Logger({
     level: 'info',
-    transports: [tpWinston.transports.default()]
+    transports: [winstonTrustpilot.transports.default()]
 });
 ```
