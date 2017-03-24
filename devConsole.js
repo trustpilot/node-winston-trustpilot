@@ -2,22 +2,22 @@
 
 let winston;
 try {
-    winston = require('winston'); // eslint-disable-line global-require
+  winston = require('winston'); // eslint-disable-line global-require
 } catch (error) {
-    winston = null;
+  winston = null;
 }
 
 module.exports = function (options) {
-    if (winston !== null) {
-        return new winston.transports.Console(
-            Object.assign({
-                colorize: true,
-                prettyPrint: true,
-                align: true,
-                depth: 3
-            }, options));
-    } else {
-        return { log: function () { } };
-    }
+  if (winston !== null) {
+    return new winston.transports.Console(
+      Object.assign({
+        colorize: true,
+        prettyPrint: true,
+        align: true,
+        depth: 3
+      }, options));
+  } else {
+    return { log: function () { } };
+  }
 };
 
