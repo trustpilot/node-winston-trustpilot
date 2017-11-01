@@ -9,11 +9,21 @@ const LogstashConsole = function (options) {
   this.name = 'logstashConsole';
 };
 
+const isObject = function(item) {
+  return Object.keys(item).length === 0 && item.constructor === Object;
+};
+
 LogstashConsole.prototype.log = function (level, msg, metadata, callback) {
   const defaultData = {
     timestamp: new Date().toJSON(),
     message: msg,
     level: level
+  };
+
+  if (!isObject(metadata)) {
+    metadata = {
+      metadata
+    };
   };
 
   const data = Object.assign({}, metadata, this.options, defaultData);
