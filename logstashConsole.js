@@ -1,6 +1,7 @@
 'use strict';
 
 const logger = require('console');
+const serializeError = require('serialize-error');
 
 const LogstashConsole = function (options) {
   this.logger = logger;
@@ -16,7 +17,8 @@ LogstashConsole.prototype.log = function (level, msg, metadata, callback) {
   };
 
   const data = Object.assign({}, metadata, this.options, defaultData);
-  this.logger.log(JSON.stringify(data));
+  const logMessage = JSON.stringify(serializeError(data));
+  this.logger.log(logMessage);
   callback(null, true);
 };
 
