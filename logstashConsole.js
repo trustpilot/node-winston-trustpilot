@@ -9,7 +9,7 @@ const LogstashConsole = function (options) {
   this.name = 'logstashConsole';
 };
 
-const isObject = function(item) {
+const isObject = function (item) {
   return Object.keys(item).length === 0 && item.constructor === Object;
 };
 
@@ -24,7 +24,7 @@ LogstashConsole.prototype.log = function (level, msg, metadata, callback) {
     metadata = {
       metadata
     };
-  };
+  }
 
   const data = Object.assign({}, metadata, this.options, defaultData);
   const logMessage = JSON.stringify(serializeError(data));
