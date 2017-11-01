@@ -19,5 +19,8 @@
     "eslint-config-trustpilot": "1.7.0",
     "eslint-plugin-babel": "4.1.1",
     "eslint-plugin-react": "6.10.3"
+  },
+  "dependencies": {
+    "serialize-error": "2.1.0"
   }
 }
