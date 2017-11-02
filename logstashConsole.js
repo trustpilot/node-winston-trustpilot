@@ -10,7 +10,7 @@ const LogstashConsole = function (options) {
 };
 
 const isObject = function (item) {
-  return Object.keys(item).length === 0 && item.constructor === Object;
+  return item.constructor === Object;
 };
 
 LogstashConsole.prototype.log = function (level, msg, metadata, callback) {
